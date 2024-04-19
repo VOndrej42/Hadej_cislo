@@ -1,4 +1,5 @@
 class Hadanka:
+    from random import randint
 
     def __init__(self, pocet_pokusu, min_cislo, max_cislo):
         """
@@ -30,9 +31,7 @@ class Hadanka:
 
     def generuj_nahodne_cislo(self):
         # Vygeneruje náhodné číslo
-        from random import randint
-
-        return randint(self.min_cislo, self.max_cislo)
+        return self.randint(self.min_cislo, self.max_cislo)
 
     def ziskej_cislo_hrace(self):
         # Zadání čísla od hráče
